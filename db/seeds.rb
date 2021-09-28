@@ -8,7 +8,7 @@
 
 
 5.times do 
-    Article.create([{ 
+    Article.create!([{ 
         title: "The IT Crowd",
         body: Faker::TvShows::TheITCrowd.quote,
         status: "public",
@@ -17,7 +17,7 @@
 end
 
 5.times do 
-    Article.create([{ 
+    Article.create!([{ 
         title: "Bojack Horseman",
         body: Faker::TvShows::BojackHorseman.quote,
         status: "public",
@@ -25,7 +25,7 @@ end
     }])
 end
 5.times do 
-        Article.create([{ 
+        Article.create!([{ 
         title: "The Big Lebowski",
         body: Faker::Movies::Lebowski.quote,
         status: "public",
@@ -33,7 +33,7 @@ end
     }])
 end
 5.times do 
-    Article.create([{ 
+    Article.create!([{ 
     title: "Recipe",
     body: Faker::Food.description,
     status: "public",
