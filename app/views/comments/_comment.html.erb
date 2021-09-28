@@ -1,15 +1,23 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
+ 
 
 <p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
-              method: :delete,
-              data: { confirm: "Are you sure?" } %>
+ 
+
+
+<div class="card">
+  <div class="card-header">
+    <strong>By: <%= comment.commenter %></strong>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><%= comment.body %></p>
+  <p>
+    <%= link_to 'Destroy Comment', [comment.article, comment],
+            method: :delete,
+            data: { confirm: "Are you sure?" }, class:"btn btn-outline-danger" %>
 </p>
+  </div>
+</div>
+
+
+<br>

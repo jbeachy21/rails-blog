@@ -1,16 +1,38 @@
+<div class="container-fluid">
 <h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+<p class="lead"><%= @article.body %></p>
 
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article),
+<br>
+<br>
+
+
+
+<% if user_signed_in? %>
+
+ 
+<h3>Actions:</h3><br>  
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item border-0"><%= link_to "Edit", edit_article_path(@article), 
+  class:"btn btn-outline-success"%></li>
+  <li class="list-group-item border-0"><%= link_to "Destroy", article_path(@article),
                   method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
+                  data: { confirm: "Are you sure?" }, 
+                  class:"btn btn-outline-danger" %></li>
 </ul>
+<%end%>
+
+<br>
+<br>
 
 <h2>Comments</h2>
 <%= render @article.comments %>
 
+
+
+ 
+<br>
+<br>
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
+</div>
