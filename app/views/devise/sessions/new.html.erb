@@ -1,0 +1,32 @@
+<div class="container-fluid">
+<h2 class="ml-3">Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control ml-2 mb-2", 
+    placeholder: "me@example.com" %>
+  </div>
+
+  <div class="field">
+ 
+    <%= f.password_field :password, autocomplete: "current-password", class:"form-control ml-2 mb-2", 
+    placeholder: "Password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me, class:"form-group ml-3"%>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in", class:"btn btn-outline-primary ml-3" %>
+  </div>
+<% end %>
+
+ 
+
+
+<%= render "devise/shared/links" %>
+</div>
