@@ -27,7 +27,7 @@ gem 'devise', '~> 4.8'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 gem 'faker', '~> 2.19'
 gem 'trix'
-gem "algoliasearch-rails"
+gem 'dotenv-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
