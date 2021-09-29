@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand">Rails Blog</a>
+        
         <div class="collapse navbar-collapse">
         <ul class="text-white navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100">
+            <li><a href="#" class="navbar-brand">Rails Blog</a></li>
             <li class="nav-item"><%= link_to "Articles", articles_path, class:"nav-link" %></li>
             <% if user_signed_in? %>
                 <li class="nav-item"><%= link_to "Create Article", new_article_path, class:"nav-link"%></li>
@@ -12,7 +13,13 @@
             <li class="nav-item"><%= link_to "Sign Up", new_user_registration_path, class:"nav-link"%></li>
             <li class="nav-item"><%= link_to "Sign In", new_user_session_path, class:"nav-link"%></li>
             <%end%>
-        </ul>
+            <form class="form-inline">
+                
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" 
+                aria-label>
+                
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </div>
 </nav> 
