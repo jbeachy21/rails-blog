@@ -3,7 +3,7 @@
         
         <div class="collapse navbar-collapse">
         <ul class="text-white navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100">
-            <li><a href="#" class="navbar-brand">Rails Blog</a></li>
+            <li><%= link_to "Rails Blog", articles_path, class:"navbar-brand" %></li>
             <li class="nav-item"><%= link_to "Articles", articles_path, class:"nav-link" %></li>
             <% if user_signed_in? %>
                 <li class="nav-item"><%= link_to "Create Article", new_article_path, class:"nav-link"%></li>
