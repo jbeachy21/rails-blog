@@ -5,6 +5,7 @@ ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
+gem 'will_paginate', '~> 3.3.1' 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 # Use Puma as the app server
@@ -24,7 +25,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.8'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 gem 'faker', '~> 2.19'
 gem 'trix'
 gem 'dotenv', '~> 2.7', '>= 2.7.6'

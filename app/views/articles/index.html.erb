@@ -1,6 +1,8 @@
 <div class="container-fluid text-center">
 <% if user_signed_in? %>
 <h3>Welcome user <%=  current_user.id %></h3>
+<% else %>
+<h3>Welcome user</h3>
 <%end%>
 
 
@@ -19,7 +21,7 @@ Our blog has <%= Article.public_count %> articles and counting!
 <br><br>
 
 <div class="apple_pagination mx-auto">
-    <%= will_paginate @article, :container => false %>
+     
 </div>
 
 

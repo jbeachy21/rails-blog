@@ -6,9 +6,6 @@ class ArticleTest < ActiveSupport::TestCase
         @article = Article.new(title: "Avengers Endgame", body: "I am inevitable")
     end
 
-   
- 
-
 
     test "title should be present" do
         @article.title = " "
