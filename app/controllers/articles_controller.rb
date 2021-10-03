@@ -6,8 +6,6 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
-    set_meta_tags title: @article.title, site: "Jasper's Rails blog",
-                  reverse: true, description: @article.body
   end
 
   def new
