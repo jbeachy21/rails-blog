@@ -3,11 +3,13 @@
   <head>
     <title>Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= display_meta_tags %>
     <meta property='og:title' content='Rails Blog'/>
     <meta property='og:image' content='../../assets/images/railsblog.png'/>
     <meta property='og:description' content='A Rails blog that uses devise for authentication, 
     ruby faker for mock data, and pagy for pagination.'/>
     <meta property='og:url' content='https://dry-plateau-28540.herokuapp.com/articles'/>
+    
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

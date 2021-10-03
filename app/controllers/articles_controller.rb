@@ -1,10 +1,13 @@
 class ArticlesController < ApplicationController
   def index
     @pagy, @articles = pagy(Article.all)
+    set_meta_tags image_src: "https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png"
   end
 
   def show
     @article = Article.find(params[:id])
+    set_meta_tags title: @article.title, site: "Jasper's Rails blog",
+                  reverse: true, description: @article.body
   end
 
   def new
