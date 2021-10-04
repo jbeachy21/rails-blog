@@ -3,10 +3,10 @@
       <%= form.label :commenter %><br>
       <%= form.text_field :commenter, class:"form-control" %>
     </p>
-    <p>
-      <%= form.label :body %><br>
-      <%= form.rich_text_area :body %>
-    </p>
+    <div class="">
+    <%= form.label :body %>
+    <%= form.text_field :body, class:"form-control" %>
+  </div>
     <p>
         <%= form.label :status %><br>
         <%= form.select :status, ['public', 'private', 'archived'], selected: 'public', 

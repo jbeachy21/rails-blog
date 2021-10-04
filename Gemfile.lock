@@ -176,8 +176,8 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.1.0)
     tilt (2.0.10)
-    trix (0.10.1)
-      rails
+    trix-rails (2.3.0)
+      rails (> 4.1, < 7.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -221,7 +221,7 @@ DEPENDENCIES
   rails (~> 6.1.4, >= 6.1.4.1)
   sass-rails (>= 6)
   spring
-  trix
+  trix-rails (~> 2.3)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

@@ -20,7 +20,7 @@ require "sprockets/railtie"
 require "pagy"
 require "faker"
 require "meta-tags"
-require "trix"
+ 
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems

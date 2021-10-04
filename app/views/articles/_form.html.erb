@@ -8,9 +8,14 @@
     <% end %>
   </div>
 
+  <br>
+
   <div>
-    <%= form.label :body %><br>
-    <%= form.rich_text_area :body %><br>
+  <%= form.label :body %>
+  <%= form.text_field :body, class:"form-control" %>
+  <br>
+  <br>
+    
     <% article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -29,7 +34,7 @@
 
   </div>
   <div>
-    <%=  form.submit "Create Article", class:"btn btn-outline-primary" %>
+    <%=  form.submit "Submit", class:"btn btn-outline-primary" %>
   </div>
 <% end %>
 </div>

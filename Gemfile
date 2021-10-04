@@ -25,7 +25,6 @@ gem 'devise', '~> 4.8'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'faker', '~> 2.19'
-gem 'trix'
 gem 'dotenv', '~> 2.7', '>= 2.7.6'
 gem 'pagy', '~> 4.11'
 gem 'meta-tags', '~> 2.16'
