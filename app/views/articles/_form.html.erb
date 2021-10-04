@@ -27,12 +27,7 @@
     <%= form.label :status %><br>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
   </div>
-      
-  <div class="field form-group">
-      <%= form.number_field :user_id, 
-      id: :article_id, class: "form-control" %>
-
-  </div>
+   <br>
   <div>
     <%=  form.submit "Submit", class:"btn btn-outline-primary" %>
   </div>
