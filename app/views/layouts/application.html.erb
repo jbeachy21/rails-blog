@@ -3,13 +3,12 @@
   <head>
     <title>Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="image" property="og:image" content="https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png">
+    <meta data-rh="true" property="og:image" content="https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png">
 
      
     <%= display_meta_tags %>
-    <meta name="image" property="og:image" content="https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png">
-    <meta data-rh="true" property="og:image" content="https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png">
-   
-     
+    
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -17,7 +16,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
     
-
+    <link rel="image_src" href="../../assets/images/railsblog.png">
     <link rel="stylesheet" type="text/css" href="trix.css">
     <script type="text/javascript" src="trix.js"></script>
   </head>
