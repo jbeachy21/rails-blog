@@ -2,6 +2,7 @@ require_relative "boot"
 
 require "rails"
 require "dotenv"
+require "rails/all"
 Dotenv.load".env"
 # Pick the frameworks you want:
 require "devise"
@@ -19,6 +20,7 @@ require "sprockets/railtie"
 require "pagy"
 require "faker"
 require "meta-tags"
+require "trix"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
