@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   def index
     @pagy, @articles = pagy(Article.all)
-    set_meta_tags image_src: "https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png"
+    @image_src = "https://github.com/jbeachy21/rails-blog/blob/master/app/assets/images/railsblog.png"
   end
 
   def show
