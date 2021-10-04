@@ -28,6 +28,8 @@ gem 'faker', '~> 2.19'
 gem 'dotenv', '~> 2.7', '>= 2.7.6'
 gem 'pagy', '~> 4.11'
 gem 'meta-tags', '~> 2.16'
+gem 'foreman', '~> 0.87.2'
+gem 'sidekiq', '~> 6.2', '>= 6.2.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
