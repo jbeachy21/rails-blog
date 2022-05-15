@@ -12,7 +12,7 @@
         title: "The IT Crowd",
         body: Faker::TvShows::TheITCrowd.quote,
         status: "public",
-        user_id: 2
+        user_id: 1
     }])
 end
 
@@ -21,7 +21,7 @@ end
         title: "Bojack Horseman",
         body: Faker::TvShows::BojackHorseman.quote,
         status: "public",
-        user_id: 2
+        user_id: 1
     }])
 end
 5.times do 
@@ -29,7 +29,7 @@ end
         title: "The Big Lebowski",
         body: Faker::Movies::Lebowski.quote,
         status: "public",
-        user_id: 2
+        user_id: 1
     }])
 end
 5.times do 
@@ -37,6 +37,6 @@ end
     title: "Recipe",
     body: Faker::Food.description,
     status: "public",
-    user_id: 2
+    user_id: 1
 }])
 end
